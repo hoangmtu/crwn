@@ -9,7 +9,7 @@ import { getAuth,
       onAuthStateChanged
      } from 'firebase/auth';
 import { getFirestore, doc, getDoc, setDoc, collection, writeBatch, query, getDocs } from 'firebase/firestore';
-import { Await } from 'react-router-dom';
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyBCDoWvAH5FEPEPq1df0MCeMdV8k4mMfog",

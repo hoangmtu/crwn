@@ -1,4 +1,4 @@
-import { auth, createUserDocimentFromAuth, signInWithGooglePopup, signInWithGooglRederect } from "../../utils/firebsae/firebase.utils";
+import { auth } from "../../utils/firebsae/firebase.utils";
 import { getRedirectResult } from "firebase/auth";
 import { useEffect } from "react";
 import SignUpForm from "../../assets/sign-up-form/sign-up-form.component";
@@ -13,11 +13,6 @@ const Authentication = () => {
         }
         logreDerect();
     },[])
-
-    const logGoogleUser = async () => {
-        const { user } = await signInWithGooglePopup();
-        const userDocRef =  createUserDocimentFromAuth(user);        
-    }
 
     return (
         <div className="authentication-container">
